@@ -3,10 +3,10 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     while (A == false) {
         if (input.buttonIsPressed(Button.A)) {
             Player.move(-1)
-            basic.pause(100)
+            basic.pause(200)
         } else if (input.buttonIsPressed(Button.B)) {
             Player.move(1)
-            basic.pause(100)
+            basic.pause(200)
         } else {
             basic.pause(1)
         }
@@ -45,8 +45,6 @@ while (game.score() > 0) {
                 basic.setLedColor(0xff8000)
             } else if (Leben == 1) {
                 basic.setLedColor(0xff0000)
-            } else {
-            	
             }
         }
         Star.delete()
